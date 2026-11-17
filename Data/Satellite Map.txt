@@ -1,0 +1,28 @@
+NOTE: Not implemented yet
+245 | Spitzer Space Telescope | SPITZER
+249 | SOHO | SOHO
+250 | Hubble Space Telescope | -120580
+258 | Gaia | GAIA
+273 | Euclid | EUCLID
+274 | James Webb Space Telescope | JAMES WEBB SPACE TELESCOPE
+288 | SPHEREx | -163182
+289 | Nancy Grace Roman Space Telescope | ROMAN
+311 | NOAA GOES-19 | -160133
+314 | NOAA SOLAR-1 | ???
+315 | ESA Solar Orbiter | SOLAR ORBITER
+332 | Jupiter Icy Moons Explorer (JUICE) | JUPITER ICY MOONS EXPLORER
+335 | PUNCH | -163178
+336 | Lucy | LUCY
+338 | Psyche | PSYCHE
+339 | Trace Gas Orbiter | TRACE GAS ORBITER
+C49 | STEREO-A | STEREO AHEAD
+C50 | STEREO-B | STEREO BEHIND
+C51 | WISE | -135946
+C52 | Swift | -128485
+C53 | NEOSSat | -139089
+C54 | New Horizons | NEW HORIZONS
+C55 | Kepler | KEPLER
+C56 | LISA-Pathfinder | ???
+C57 | TESS | -143435
+C58 | NEO Surveyor | ???
+C59 | Yangwang-1 | ???

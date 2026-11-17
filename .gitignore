@@ -1,2 +1,6 @@
+# Ignore downloaded observation data
+/Observations/*.json
 # Ignore generated observation data
-/Observations/*
+/Computed Observations/*.txt
+# Ignore downloaded ephemeris data
+/Data/*.bsp

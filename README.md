@@ -8,6 +8,6 @@ My end goal is to be able to compute a fitted orbit for any body stored on the M
 
 # Execution
 
-Running `python data_get.py "2026 ED138"` will generate a file containing observation data for 2026 ED138. The data for this body is relatively small (74 observations) and fairly simple to process (only two telescopes, and all contain RA/DEC data). Regardless, the program should run for any given body, as long as it has an unambiguous name according to MPC.
+If you have not run the program before, run `setup_data.py` to download needed files. Currently, this downloads ephemeris data used for tracking the Earth and Sun.
 
-Note that names like `"Ceres"` will not work, use numbered designations if possible (in this case, `"1"`).
+To process an observation, run `data_get.py ID` to download observation data for `ID`. See note below. Once you have your target observations downloaded, run `data_parse.py` to process them into a more useable format. Note that `data_parse.py` processes all downloaded observation JSONs at once.
