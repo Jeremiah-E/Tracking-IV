@@ -33,6 +33,7 @@ with OBSERVATORIES.open("r", encoding="utf-8") as f:
     for line in lines:
         # Extract information from the observatory table
         code = line[0:3]
+        allowed = line[3] != "X"
         longitude = line[4:13]
         cos_phi = line[13:21]
         sin_phi = line[21:30]
@@ -50,6 +51,7 @@ with OBSERVATORIES.open("r", encoding="utf-8") as f:
             "cos_phi": parse_float(cos_phi),
             "sin_phi": parse_float(sin_phi),
             "name": name,
+            "allowed": allowed
         }
 
 # Return if the telescope has fixed coordinates
@@ -163,6 +165,10 @@ for file in files:
         code = observation["observatory"]
         if code not in codes:
             message = f"Skipped {code} (no found name)"
+            skipped[message] = skipped.get(message, 0) + 1
+        # Skip observatories whose codes are not allowed
+        elif not codes[code]["allowed"]:
+            message = f"Skipped {code} ({codes[code]['name']}) - observatory code not allowed"
             skipped[message] = skipped.get(message, 0) + 1
         # Ensure the telescope is fixed
         # TODO: Allow certain satellites

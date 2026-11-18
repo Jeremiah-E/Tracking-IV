@@ -247,7 +247,7 @@ Code  Long.   cos      sin    Name
 245                           Spitzer Space Telescope
 246  14.284760.659216+0.749664Klet Observatory-KLENOT
 247                           Roving Observer
-248   0.000000.000000+0.000000Hipparcos
+248X  0.000000.000000+0.000000Hipparcos
 249                           SOHO
 250                           Hubble Space Telescope
 251 293.247310.949565+0.312744Arecibo
