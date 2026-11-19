@@ -1,5 +1,5 @@
-from requests import get
 from pathlib import Path
+from requests import get
 from sys import argv
 import re
 
@@ -34,6 +34,6 @@ if response.ok:
     ades_xml = data[0]["XML"]
     changed, ades_xml = sanitize(ades_xml)
     if (changed):
-        print("Warning: downloaded XML file has to be modified by regex")
+        print("Warning: downloaded XML file has been modified by a regex sanitizer")
     with open(output_path, "w", encoding="utf-8") as xml_file:
         xml_file.write(ades_xml)
