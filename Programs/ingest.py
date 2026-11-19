@@ -3,8 +3,8 @@ from requests import get
 from sys import argv
 import re
 
-root = Path(__file__).resolve().parent
-OUTPUT_FOLDER = root / "Observations"
+root = Path(__file__).resolve().parent.parent
+OUTPUT_FOLDER = root / "Downloaded Observations"
 OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
 if len(argv) != 2:

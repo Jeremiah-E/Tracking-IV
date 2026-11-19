@@ -14,9 +14,9 @@ import xml.etree.ElementTree as ET
 warnings.filterwarnings('ignore', message='.*dubious year.*', category=ErfaWarning)
 
 # Needed filepaths
-root = Path(__file__).resolve().parent
-INPUT_FOLDER  = root / "Observations"
-OUTPUT_FOLDER = root / "Computed Observations"
+root = Path(__file__).resolve().parent.parent
+INPUT_FOLDER  = root / "Downloaded Observations"
+OUTPUT_FOLDER = root / "Unified Observations"
 OBSERVATORIES = root / "Data" / "Observatory Codes.txt"
 DE440_KERNEL  = root / "Data" / "de440.bsp"
 # Ensure needed folders / files exist
@@ -60,7 +60,7 @@ with OBSERVATORIES.open("r", encoding="utf-8") as f:
 
 files = listdir(INPUT_FOLDER)
 if len(files) == 0:
-    print("No observation files are present. Run preliminary.py")
+    print("No observation files are present. Run ingest.py")
     exit(0)
 files = [INPUT_FOLDER / file for file in files]
 

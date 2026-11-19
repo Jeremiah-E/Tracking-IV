@@ -1,6 +1,4 @@
-# Ignore downloaded observation data
-/Observations/*.xml
-# Ignore formatted observation data
-/Computed Observations/*.txt
-# Ignore downloaded ephemeris data
+/Downloaded Observations/*.xml
+/Unified Observations/*.txt
 /Data/*.bsp
+/.vscode
