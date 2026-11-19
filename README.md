@@ -8,8 +8,8 @@ My end goal is to be able to compute a fitted orbit for any body stored on the M
 
 # Execution
 
-If you have not run the program before, run `setup_data.py` to download needed files. Currently, this downloads ephemeris data used for tracking the Earth and Sun.
+If you have not run the program before, run `setup.py` to download needed files. Currently, this downloads ephemeris data used for tracking the Earth and Sun.
 
-To process an observation, run `data_get.py ID` to download observation data for `ID`. See note below. Once you have your target observations downloaded, run `data_parse.py` to process them into a more useable format. Note that `data_parse.py` processes all downloaded observation JSONs at once.
+To process an observation, run `preliminary.py ID` to download observation data for `ID`. See note below. Once you have your target observations downloaded, run `format.py` to process them into a more useable format. Note that `format.py` processes all downloaded observation XMLs at once.
 
 Note: `ID` must be a numeric ID. Names, like Ceres, are unsupported. If you want to download observations for a body, Google "[Body] MPC ID". Also note that not every body gets a *number*. For example, 2026 ED₁₃₈'s ID is `2026 ED138`.
