@@ -8,7 +8,7 @@ import tempfile
 # More files are needed from Data than are downloaded here
 # Thus, if you face issues with this script, you face them
 # elsewhere. Just redownload the project if this does fail
-DATA_DIR = Path(__file__).parent.parent / "Data"
+DATA_DIR = Path(__file__).parent.parent.parent / "Data"
 
 # Everything we want to download
 # This will contain more in the future

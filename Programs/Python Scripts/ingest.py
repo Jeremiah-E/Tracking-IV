@@ -3,7 +3,7 @@ from requests import get
 from sys import argv
 import re
 
-root = Path(__file__).resolve().parent.parent
+root = Path(__file__).resolve().parent.parent.parent
 OUTPUT_FOLDER = root / "Downloaded Observations"
 OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
 
@@ -37,3 +37,5 @@ if response.ok:
         print("Warning: downloaded XML file has been modified by a regex sanitizer")
     with open(output_path, "w", encoding="utf-8") as xml_file:
         xml_file.write(ades_xml)
+else:
+    print(f"Response not OK: {response.status_code}")

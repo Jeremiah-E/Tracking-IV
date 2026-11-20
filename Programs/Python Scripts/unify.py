@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 warnings.filterwarnings('ignore', message='.*dubious year.*', category=ErfaWarning)
 
 # Needed filepaths
-root = Path(__file__).resolve().parent.parent
+root = Path(__file__).resolve().parent.parent.parent
 INPUT_FOLDER  = root / "Downloaded Observations"
 OUTPUT_FOLDER = root / "Unified Observations"
 OBSERVATORIES = root / "Data" / "Observatory Codes.txt"
