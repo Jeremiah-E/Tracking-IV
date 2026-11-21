@@ -36,11 +36,16 @@ public class Vec3D {
   public double dot(Vec3D vec) {
     return this.x * vec.x + this.y * vec.y + this.z * vec.z;
   }
+  // An alias for this.dot(this)
   public double mag2() {
     return this.dot(this);
   }
   public double mag() {
     return Math.sqrt(this.mag2());
+  }
+  // TODO: Remove this. I want to use a proper projection at some point
+  public Vec2D flatten() {
+    return new Vec2D(this.x, this.y);
   }
 }
 
@@ -74,6 +79,7 @@ public class Vec2D {
   public double dot(Vec2D vec) {
     return this.x * vec.x + this.y * vec.y;
   }
+  // An alias for this.dot(this)
   public double mag2() {
     return this.dot(this);
   }
